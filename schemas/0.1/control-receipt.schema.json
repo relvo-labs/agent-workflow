@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://relvo-labs.github.io/agent-workflow/schemas/0.1/control-receipt.schema.json",
+  "title": "control-receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "0.1"
+    },
+    "kind": {
+      "const": "ControlReceipt"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worktree": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pr": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        }
+      },
+      "required": [
+        "provider",
+        "session",
+        "repository",
+        "worktree",
+        "branch",
+        "issue",
+        "pr",
+        "base"
+      ]
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "control_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "action": {
+      "enum": [
+        "question",
+        "pause",
+        "cancel",
+        "resume"
+      ]
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "persisted": {
+      "type": "boolean"
+    },
+    "observed": {
+      "type": "boolean"
+    },
+    "applied": {
+      "type": "boolean"
+    },
+    "detail": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "version",
+    "kind",
+    "task_id",
+    "run_id",
+    "identity",
+    "receipt_id",
+    "control_id",
+    "action",
+    "sequence",
+    "persisted",
+    "observed",
+    "applied",
+    "detail"
+  ]
+}
