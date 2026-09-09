@@ -75,13 +75,55 @@
       },
       "required": [
         "provider",
-        "session",
-        "repository",
-        "worktree",
-        "branch",
-        "issue",
-        "pr",
-        "base"
+        "session"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "repository"
+                ]
+              },
+              {
+                "required": [
+                  "worktree"
+                ]
+              },
+              {
+                "required": [
+                  "branch"
+                ]
+              },
+              {
+                "required": [
+                  "issue"
+                ]
+              },
+              {
+                "required": [
+                  "pr"
+                ]
+              },
+              {
+                "required": [
+                  "base"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "repository",
+              "worktree",
+              "branch",
+              "issue",
+              "pr",
+              "base"
+            ]
+          }
+        }
       ]
     },
     "candidate": {
@@ -219,13 +261,55 @@
             },
             "required": [
               "provider",
-              "session",
-              "repository",
-              "worktree",
-              "branch",
-              "issue",
-              "pr",
-              "base"
+              "session"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "repository"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "worktree"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "issue"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "pr"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "base"
+                      ]
+                    }
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "repository",
+                    "worktree",
+                    "branch",
+                    "issue",
+                    "pr",
+                    "base"
+                  ]
+                }
+              }
             ]
           }
         },
@@ -261,7 +345,6 @@
     "classification",
     "risk",
     "identity",
-    "candidate",
     "authorization",
     "required_actions",
     "acceptance",
@@ -269,5 +352,23 @@
     "repair_limit",
     "resume_requested",
     "resume_supported"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "identity": {
+            "required": [
+              "repository"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "candidate"
+        ]
+      }
+    }
   ]
 }

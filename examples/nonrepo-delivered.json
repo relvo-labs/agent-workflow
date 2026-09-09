@@ -1,0 +1,109 @@
+{
+  "task": {
+    "version": "0.1",
+    "kind": "TaskPacket",
+    "task_id": "task-a",
+    "run_id": "run-a",
+    "request": "Summarize the supplied workshop agenda",
+    "classification": "S",
+    "risk": "low",
+    "identity": {
+      "provider": "example",
+      "session": "coordinator-a"
+    },
+    "authorization": {
+      "granted": true,
+      "by": "example-owner",
+      "actions": [
+        "read"
+      ],
+      "write_scopes": []
+    },
+    "required_actions": [
+      "read"
+    ],
+    "acceptance": [
+      "agenda-summary"
+    ],
+    "nodes": [
+      {
+        "id": "summarize",
+        "depends_on": [],
+        "state": "completed",
+        "mode": "coordinator",
+        "writes": [],
+        "resources": [],
+        "identity": {
+          "provider": "example",
+          "session": "coordinator-a"
+        }
+      }
+    ],
+    "repair_limit": 1,
+    "resume_requested": false,
+    "resume_supported": false
+  },
+  "checkpoint": {
+    "version": "0.1",
+    "kind": "Checkpoint",
+    "task_id": "task-a",
+    "run_id": "run-a",
+    "identity": {
+      "provider": "example",
+      "session": "coordinator-a"
+    },
+    "sequence": 1,
+    "state": "completed",
+    "process_state": "quiescent",
+    "queue_cancelled": false,
+    "history_persisted": true,
+    "durable": true,
+    "next_action": "Requester reads the agenda summary",
+    "handoff": null
+  },
+  "result": {
+    "version": "0.1",
+    "kind": "Result",
+    "task_id": "task-a",
+    "run_id": "run-a",
+    "identity": {
+      "provider": "example",
+      "session": "coordinator-a"
+    },
+    "outcome": "delivered",
+    "reason": "The synthetic summary covers the supplied agenda",
+    "repair_attempts": 0,
+    "evidence": [
+      {
+        "id": "ev-a",
+        "acceptance_id": "agenda-summary",
+        "command": "Manual comparison of summary with supplied agenda",
+        "outcome": "pass",
+        "scope": "local",
+        "target": "supplied-agenda",
+        "readback": "",
+        "observed_at": "2026-01-01T00:00:00Z"
+      }
+    ]
+  },
+  "receipts": [
+    {
+      "version": "0.1",
+      "kind": "ControlReceipt",
+      "task_id": "task-a",
+      "run_id": "run-a",
+      "identity": {
+        "provider": "example",
+        "session": "coordinator-a"
+      },
+      "receipt_id": "question-a",
+      "control_id": "question-a",
+      "action": "question",
+      "sequence": 1,
+      "persisted": true,
+      "observed": true,
+      "applied": true,
+      "detail": "Summary scope confirmed; synthetic example"
+    }
+  ]
+}

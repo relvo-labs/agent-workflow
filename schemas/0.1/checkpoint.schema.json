@@ -58,13 +58,55 @@
       },
       "required": [
         "provider",
-        "session",
-        "repository",
-        "worktree",
-        "branch",
-        "issue",
-        "pr",
-        "base"
+        "session"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "repository"
+                ]
+              },
+              {
+                "required": [
+                  "worktree"
+                ]
+              },
+              {
+                "required": [
+                  "branch"
+                ]
+              },
+              {
+                "required": [
+                  "issue"
+                ]
+              },
+              {
+                "required": [
+                  "pr"
+                ]
+              },
+              {
+                "required": [
+                  "base"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "repository",
+              "worktree",
+              "branch",
+              "issue",
+              "pr",
+              "base"
+            ]
+          }
+        }
       ]
     },
     "sequence": {
@@ -148,13 +190,55 @@
               },
               "required": [
                 "provider",
-                "session",
-                "repository",
-                "worktree",
-                "branch",
-                "issue",
-                "pr",
-                "base"
+                "session"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "repository"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "worktree"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "branch"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "issue"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "pr"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "base"
+                        ]
+                      }
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "repository",
+                      "worktree",
+                      "branch",
+                      "issue",
+                      "pr",
+                      "base"
+                    ]
+                  }
+                }
               ]
             },
             "to": {
@@ -196,13 +280,55 @@
               },
               "required": [
                 "provider",
-                "session",
-                "repository",
-                "worktree",
-                "branch",
-                "issue",
-                "pr",
-                "base"
+                "session"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "repository"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "worktree"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "branch"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "issue"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "pr"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "base"
+                        ]
+                      }
+                    ]
+                  },
+                  "then": {
+                    "required": [
+                      "repository",
+                      "worktree",
+                      "branch",
+                      "issue",
+                      "pr",
+                      "base"
+                    ]
+                  }
+                }
               ]
             },
             "prior_quiescent": {

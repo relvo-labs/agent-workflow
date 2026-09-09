@@ -32,10 +32,10 @@ Exact previous/current identity, PR binding and quiescence evidence.
 Checkpoint handoff with distinct sessions and acknowledged transfer.
 
 ## Procedure
-1. Bind one provider plus exact session to one repository/worktree/branch/base/issue/PR tuple. Pre-PR uses pre-pr:<branch>; one PR may continue in that exact session.
+1. Bind one provider plus exact session to the task/run. For development, bind the complete repository/worktree/branch/base/issue/PR tuple. Pre-PR uses pre-pr:<branch>; one PR may continue in that exact session.
 2. Before transfer stop scheduling and establish prior process quiescence with native evidence. Queue cancellation alone is insufficient. If process state is unknown, block instead of claiming the lease released.
 3. Start a fresh session only for the same explicitly transferred work. Record from/to identities, prior_quiescent and acknowledged after the new owner reads the minimal checkpoint. Different PR means a new writer identity, never a resume.
-4. Validate the handoff bundle. Keep old-session evidence outside the new correlated result; the current result must bind the current identity. Do not claim distributed exclusion from this record.
+4. Validate the handoff bundle. Any submitted running node matching the prior exact provider/session contradicts safe transfer, even with no writes or a blocked result. Keep old-session evidence outside the new correlated result; the current result must bind the current identity. Do not claim distributed exclusion from this record.
 
 ## Relationships
 - [runtime-checkpoint](../runtime-checkpoint/SKILL.md)

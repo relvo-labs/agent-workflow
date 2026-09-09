@@ -78,5 +78,10 @@
     "file": "external-without-readback.json",
     "valid": false,
     "error": "readback"
+  },
+  {
+    "file": "nonrepo-delivered.json",
+    "valid": true,
+    "error": null
   }
 ]

@@ -87,8 +87,10 @@ def validate(bundle):
         schema('control-receipt', rec)
     for item in [check, result, *bundle['receipts']]:
         require(all(item[k] == task[k] for k in ('task_id', 'run_id', 'identity')), 'correlation')
-    require(result['candidate'] == task['candidate'], 'candidate')
-    require(task['identity']['pr'].strip() == task['identity']['pr'], 'identity')
+    require(result.get('candidate') == task.get('candidate'), 'candidate')
+    development = 'repository' in task['identity']
+    if development:
+        require(task['identity']['pr'].strip() == task['identity']['pr'], 'identity')
     require(task['acceptance'] and len(set(task['acceptance'])) == len(task['acceptance']), 'acceptance')
     auth = task['authorization']
     require(auth['granted'] and auth['by'].strip() and task['required_actions']
@@ -122,13 +124,15 @@ def validate(bundle):
         require(all(str(v).strip() == str(v) and str(v).strip() for v in ident.values()), 'identity')
         key = writer(ident)
         if key in identities:
-            require(identities[key]['pr'] == ident['pr'], 'cross-pr-writer')
+            require(identities[key].get('pr') == ident.get('pr'), 'cross-pr-writer')
             require(identities[key] == ident, 'writer-identity')
         identities[key] = ident
         if n['writes']:
-            binding = ident['repository'], ident['pr']
-            require(binding not in pr_writers or pr_writers[binding] == ident, 'writer-ownership')
-            pr_writers[binding] = ident
+            require(not development or 'repository' in ident, 'writer-identity')
+            if 'repository' in ident:
+                binding = ident['repository'], ident['pr']
+                require(binding not in pr_writers or pr_writers[binding] == ident, 'writer-ownership')
+                pr_writers[binding] = ident
         for path in n['writes']:
             path_parts(path)
             require(any(within(path, scope) for scope in auth['write_scopes']), 'write-authorization')
@@ -149,8 +153,10 @@ def validate(bundle):
         require(handoff['to'] == task['identity'] and handoff['from'] != handoff['to']
                 and writer(handoff['from']) != writer(handoff['to'])
                 and handoff['prior_quiescent'] and handoff['acknowledged'], 'handoff')
-        require(all(handoff['from'][k] == handoff['to'][k]
+        require(all(handoff['from'].get(k) == handoff['to'].get(k)
                     for k in ('repository', 'branch', 'base', 'issue', 'pr')), 'handoff')
+        require(not any(writer(n['identity']) == writer(handoff['from'])
+                        for n in active), 'handoff')
     seen_receipts, seen_controls, last_sequence = set(), set(), -1
     for receipt in bundle['receipts']:
         require(receipt['receipt_id'] not in seen_receipts
@@ -167,7 +173,7 @@ def validate(bundle):
     for evidence in result['evidence']:
         require(evidence['id'] not in seen_evidence, 'duplicate-evidence')
         seen_evidence.add(evidence['id'])
-        require(evidence['candidate'] == task['candidate'], 'stale-evidence')
+        require(evidence.get('candidate') == task.get('candidate'), 'stale-evidence')
         require(evidence['acceptance_id'] in task['acceptance'], 'acceptance')
         if evidence['scope'] == 'external':
             require(evidence['readback'].strip(), 'readback')

@@ -34,8 +34,8 @@ TaskPacket with classified risk, acceptance and explicit authorization.
 ## Procedure
 1. List the requested effect, non-goals and exact allowed actions/write scopes. Ask only for missing authority, identity or a decision that changes execution; an explicitly authorized high-risk task is not permanently ASK.
 2. Choose S for bounded low-risk work, otherwise M/L for contracts or cross-system effects. S may use the coordinator alone; additional agents must retire a named risk.
-3. Bind repository, worktree, branch, immutable base, issue, pre-PR binding or PR, provider and exact session. After PR creation update every correlated record to the actual PR before further execution.
-4. Assign acceptance IDs and a candidate SHA. Keep only task-relevant instructions and evidence pointers, never full private chat or credentials. Fill the TaskPacket, then validate the complete example/bundle before activation.
+3. Bind task/run IDs, provider and exact session for every task. For development, also bind the complete repository/worktree/branch/immutable-base/issue/PR extension. Pre-PR uses pre-pr:<branch>; after PR creation update every correlated record to the actual PR before further execution. Non-repository work omits the entire development extension; do not invent Git or PR identifiers.
+4. Assign acceptance IDs and, for development, a candidate SHA. Generic work needs no candidate; if one is supplied it must match in task, result and all evidence. Keep only task-relevant instructions and evidence pointers, never full private chat or credentials. Fill the TaskPacket, then validate the complete example/bundle before activation.
 
 ## Relationships
 - [dag-coordinate](../dag-coordinate/SKILL.md)

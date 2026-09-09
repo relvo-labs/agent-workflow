@@ -32,7 +32,7 @@ TaskPacket, Checkpoint, Result/Evidence and latest ControlReceipts.
 Validated delivered/blocked/cancelled bundle plus explicit human decision.
 
 ## Procedure
-1. Correlate task, run, exact identity and candidate across records. Every evidence item names an acceptance ID, exact candidate, actual command, outcome, target and observation time.
+1. Correlate task, run and exact identity across records. Every evidence item names an acceptance ID, actual command or manual check, outcome, target and observation time. Development requires an exact candidate SHA across task, result and evidence. Generic tasks may omit candidate everywhere; if supplied, it must match everywhere.
 2. Read external changes back at the exact target using a separately authorized tool. Store a safe evidence reference, not credentials or whole private responses. Offline validation only checks that this reference exists; a reviewer must inspect the observation.
 3. Reject stale candidates, duplicate receipts, missing coverage or stage mismatches. Review evidence at the frozen head. If a repair is needed, spend no more than the explicit budget (default one), then recheck invalidated evidence; remaining failure is blocked, never an infinite loop.
 4. Deliver only after all acceptance passes and work is quiescent. Report blockers and next owner explicitly. For development only, add PR, fresh review, human merge, deployment and UAT gates when separately authorized; neither schema validity nor Ready grants those actions.

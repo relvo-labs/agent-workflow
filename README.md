@@ -27,6 +27,8 @@ uv pip sync --python .venv/bin/python requirements.txt
 
 The validator prints `VALID: offline contract checks passed; external state not verified`.
 The tests also require each invalid fixture to fail for its expected diagnostic.
+For a delivered read-only task with one coordinator and no Git/PR/candidate fields,
+validate [nonrepo-delivered.json](examples/nonrepo-delivered.json).
 Try `.venv/bin/python tools/validate.py examples/stale-evidence.json`: exit 1,
 `INVALID: stale-evidence`. Examples are deterministic synthetic data, **not live evidence**.
 Windows uses `.venv/Scripts/python.exe`; only Linux execution is verified for this Draft.
