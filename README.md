@@ -1,6 +1,9 @@
-![Multi-session collaboration reference architecture: coordinator routes agents and terminal tasks, gathers evidence, and gates delivery](assets/collaboration-architecture.jpg)
+<picture>
+  <source media="(max-width: 680px)" srcset="assets/banner-mobile.png">
+  <img src="assets/banner-desktop.png" alt="Provider-neutral workflow banner: user goal and authority feed a coordinator that chooses direct tools, a single agent, or optional multi-agent lanes; questions and checkpoints apply during execution; evidence fans in for correlated review, one bounded repair, delivery, or a blocked stop; an optional development lifecycle sits below a shared skills and contracts layer.">
+</picture>
 
-*Reference architecture, not verified integration: the Telegram/Hermes routes shown are illustrative; this toolkit remains portable across tools.*
+*Reference workflow, not a runtime: provider/tool names are intentionally omitted; this toolkit remains portable across tools. Editable [source](diagrams/banner.json) and [reproduction notes](assets/README.md).*
 
 # Relvo Agent Workflow
 

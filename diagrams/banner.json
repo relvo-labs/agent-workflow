@@ -1,0 +1,103 @@
+{
+  "version": "0.1",
+  "title": "Skills-first multi-agent collaboration workflow",
+  "heading": "Relvo Agent Workflow",
+  "subtitle": "Portable collaboration reference | v0.1 Draft",
+  "legend": [
+    {"label": "Route", "color": "cyan"},
+    {"label": "Evidence", "color": "emerald"},
+    {"label": "Controls", "color": "purple"},
+    {"label": "Optional lifecycle", "color": "amber"},
+    {"label": "Blocked", "color": "blocked"}
+  ],
+  "intake": {
+    "id": "authority",
+    "label": "User goal + authority",
+    "note": "Request, scope and acceptance"
+  },
+  "coordinator": {
+    "id": "coordinator",
+    "label": "TaskPacket + Coordinator",
+    "note": "Acceptance, dependencies, write scope. Chooses the smallest sufficient execution."
+  },
+  "alternatives_heading": "Alternative execution modes — choose one, not all",
+  "alternatives": [
+    {
+      "id": "direct",
+      "label": "Direct tools",
+      "note": "Coordinator runs literal bounded commands"
+    },
+    {
+      "id": "single",
+      "label": "Single agent",
+      "note": "One bounded outcome, one writer"
+    },
+    {
+      "id": "multi",
+      "label": "Multi-agent (optional)",
+      "note": "Dependency-ready disjoint scopes. Not always faster"
+    }
+  ],
+  "control_strip": {
+    "label": "Questions · ControlReceipt · Checkpoint",
+    "note": "Applies during execution. Persisted ≠ observed ≠ applied. Unsupported resume → blocked. History ≠ live durability."
+  },
+  "evidence": {
+    "id": "evidence",
+    "label": "Result + embedded Evidence",
+    "note": "Coordinator correlation and exact target readback"
+  },
+  "review": {
+    "id": "review",
+    "label": "Evidence review",
+    "note": "Independent review where warranted"
+  },
+  "closure": [
+    {
+      "id": "deliver",
+      "label": "Deliver",
+      "note": "All acceptance passes; quiescent",
+      "condition": "Pass"
+    },
+    {
+      "id": "repair",
+      "label": "One bounded repair",
+      "note": "Recheck invalidated evidence only",
+      "condition": "Repair budget"
+    },
+    {
+      "id": "blocked",
+      "label": "Blocked",
+      "note": "Reason and next action",
+      "condition": "Unresolved"
+    }
+  ],
+  "repair_edge_label": "Recheck once",
+  "dev_strip": {
+    "label": "Development-only, optional",
+    "note": "Frozen candidate → PR + fresh review → human merge, separately authorized. Not universal."
+  },
+  "skills_panel": {
+    "heading": "Shared skills & contracts layer",
+    "version_label": "v0.1.0",
+    "layer_note": "Portable across tools. Distinct from provider adapters, which are wiring guides, not runtimes.",
+    "skills_heading": "Skills",
+    "skills": [
+      "task-intake",
+      "dag-coordinate",
+      "writer-handoff",
+      "runtime-checkpoint",
+      "evidence-review"
+    ],
+    "records_heading": "Contracts 0.1 · Draft",
+    "records": [
+      "TaskPacket",
+      "ControlReceipt",
+      "Checkpoint",
+      "Result",
+      "Bundle"
+    ],
+    "records_note": "Bundle groups records for offline checks, not a runtime supervisor."
+  },
+  "footer": "Reference workflow, not a runtime. Provider probes: NOT RUN. Offline checks do not verify external state."
+}

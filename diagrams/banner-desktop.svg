@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1171" viewBox="0 0 1440 1171" role="img" aria-labelledby="title desc">
+<title id="title">Relvo Agent Workflow: Skills-first multi-agent collaboration workflow</title>
+<desc id="desc">Neutral engineering banner: goal and authority into a coordinator that chooses direct tools, a single agent or optional multi-agent lanes; questions and checkpoints apply during execution; evidence fans in for correlated review, one bounded repair, delivery or a blocked stop; an optional development lifecycle sits below; a shared skills and contracts layer is shown separately from provider adapters.</desc>
+<rect width="1440" height="1171" fill="#0a0f1e"/>
+<line x1="44" y1="0" x2="44" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="88" y1="0" x2="88" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="132" y1="0" x2="132" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="176" y1="0" x2="176" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="220" y1="0" x2="220" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="264" y1="0" x2="264" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="308" y1="0" x2="308" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="352" y1="0" x2="352" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="396" y1="0" x2="396" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="440" y1="0" x2="440" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="484" y1="0" x2="484" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="528" y1="0" x2="528" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="572" y1="0" x2="572" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="616" y1="0" x2="616" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="660" y1="0" x2="660" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="704" y1="0" x2="704" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="748" y1="0" x2="748" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="792" y1="0" x2="792" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="836" y1="0" x2="836" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="880" y1="0" x2="880" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="924" y1="0" x2="924" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="968" y1="0" x2="968" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1012" y1="0" x2="1012" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1056" y1="0" x2="1056" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1100" y1="0" x2="1100" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1144" y1="0" x2="1144" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1188" y1="0" x2="1188" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1232" y1="0" x2="1232" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1276" y1="0" x2="1276" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1320" y1="0" x2="1320" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1364" y1="0" x2="1364" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="1408" y1="0" x2="1408" y2="1171" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="44" x2="1440" y2="44" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="88" x2="1440" y2="88" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="132" x2="1440" y2="132" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="176" x2="1440" y2="176" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="220" x2="1440" y2="220" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="264" x2="1440" y2="264" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="308" x2="1440" y2="308" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="352" x2="1440" y2="352" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="396" x2="1440" y2="396" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="440" x2="1440" y2="440" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="484" x2="1440" y2="484" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="528" x2="1440" y2="528" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="572" x2="1440" y2="572" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="616" x2="1440" y2="616" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="660" x2="1440" y2="660" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="704" x2="1440" y2="704" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="748" x2="1440" y2="748" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="792" x2="1440" y2="792" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="836" x2="1440" y2="836" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="880" x2="1440" y2="880" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="924" x2="1440" y2="924" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="968" x2="1440" y2="968" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="1012" x2="1440" y2="1012" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="1056" x2="1440" y2="1056" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="1100" x2="1440" y2="1100" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="1144" x2="1440" y2="1144" stroke="#1b2740" stroke-width="1" opacity="0.35"/>
+<defs><marker id="arrow-cyan" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#22d3ee"/></marker><marker id="arrow-emerald" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#34d399"/></marker><marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#a9b4c9"/></marker><marker id="arrow-blocked" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#fb7185"/></marker></defs>
+<text x="40" y="45" font-family="sans-serif" font-size="27" font-weight="700" fill="#f4f7fb" text-anchor="start">Relvo Agent Workflow</text>
+<text x="40" y="69" font-family="sans-serif" font-size="14" font-weight="500" fill="#a9b4c9" text-anchor="start">Portable collaboration reference | v0.1 Draft</text>
+<circle cx="44.08" cy="95.16" r="4.08" fill="#22d3ee"/>
+<text x="56.16" y="99" font-family="sans-serif" font-size="12" font-weight="500" fill="#a9b4c9" text-anchor="start">Route</text>
+<circle cx="122.24" cy="95.16" r="4.08" fill="#34d399"/>
+<text x="134.32" y="99" font-family="sans-serif" font-size="12" font-weight="500" fill="#a9b4c9" text-anchor="start">Evidence</text>
+<circle cx="222" cy="95.16" r="4.08" fill="#a685fa"/>
+<text x="234.08" y="99" font-family="sans-serif" font-size="12" font-weight="500" fill="#a9b4c9" text-anchor="start">Controls</text>
+<circle cx="321.76" cy="95.16" r="4.08" fill="#f5a524"/>
+<text x="333.84" y="99" font-family="sans-serif" font-size="12" font-weight="500" fill="#a9b4c9" text-anchor="start">Optional lifecycle</text>
+<circle cx="493.52" cy="95.16" r="4.08" fill="#fb7185"/>
+<text x="505.6" y="99" font-family="sans-serif" font-size="12" font-weight="500" fill="#a9b4c9" text-anchor="start">Blocked</text>
+<rect x="40" y="125" width="260" height="118" rx="14" fill="#101a30" stroke="#2c3b5c" stroke-width="2"/>
+<text x="60" y="155" font-family="sans-serif" font-size="20" font-weight="600" fill="#f4f7fb" text-anchor="start">User goal +</text>
+<text x="60" y="182" font-family="sans-serif" font-size="20" font-weight="600" fill="#f4f7fb" text-anchor="start">authority</text>
+<text x="60" y="204.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Request, scope and</text>
+<text x="60" y="226" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">acceptance</text>
+<rect x="360" y="125" width="740" height="104" rx="14" fill="#101a30" stroke="#22d3ee" stroke-width="2"/>
+<text x="380" y="155" font-family="sans-serif" font-size="21" font-weight="600" fill="#f4f7fb" text-anchor="start">TaskPacket + Coordinator</text>
+<text x="380" y="177.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Acceptance, dependencies, write scope. Chooses the smallest sufficient execution.</text>
+<path d="M300,184 L360,184" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<text x="40" y="277" font-family="sans-serif" font-size="16" font-weight="600" fill="#a9b4c9" text-anchor="start">Alternative execution modes — choose one, not all</text>
+<rect x="40" y="331" width="360" height="124" rx="14" fill="#101a30" stroke="#2c3b5c" stroke-width="2"/>
+<text x="60" y="361" font-family="sans-serif" font-size="19" font-weight="600" fill="#f4f7fb" text-anchor="start">Direct tools</text>
+<text x="60" y="383.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Coordinator runs literal bounded</text>
+<text x="60" y="405" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">commands</text>
+<path d="M730,229 L730,313 L220,313 L220,331" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<rect x="420" y="331" width="360" height="124" rx="14" fill="#101a30" stroke="#2c3b5c" stroke-width="2"/>
+<text x="440" y="361" font-family="sans-serif" font-size="19" font-weight="600" fill="#f4f7fb" text-anchor="start">Single agent</text>
+<text x="440" y="383.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">One bounded outcome, one writer</text>
+<path d="M730,229 L730,313 L600,313 L600,331" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<rect x="800" y="331" width="360" height="124" rx="14" fill="#101a30" stroke="#2c3b5c" stroke-width="2"/>
+<text x="820" y="361" font-family="sans-serif" font-size="19" font-weight="600" fill="#f4f7fb" text-anchor="start">Multi-agent (optional)</text>
+<text x="820" y="383.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Dependency-ready disjoint scopes. Not</text>
+<text x="820" y="405" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">always faster</text>
+<path d="M730,229 L730,313 L980,313 L980,331" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<path d="M220,455 L220,489" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<path d="M600,455 L600,489" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<path d="M980,455 L980,489" fill="none" stroke="#22d3ee" stroke-width="3" marker-end="url(#arrow-cyan)"/>
+<rect x="40" y="489" width="1140" height="92" rx="14" fill="#0d1526" stroke="#a685fa" stroke-width="2" stroke-dasharray="10,6"/>
+<text x="60" y="519" font-family="sans-serif" font-size="17" font-weight="600" fill="#f4f7fb" text-anchor="start">Questions · ControlReceipt · Checkpoint</text>
+<text x="60" y="541.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Applies during execution. Persisted ≠ observed ≠ applied. Unsupported resume → blocked. History ≠ live durability.</text>
+<path d="M610,581 L610,611" fill="none" stroke="#34d399" stroke-width="3" marker-end="url(#arrow-emerald)"/>
+<rect x="305" y="611" width="610" height="96" rx="14" fill="#101a30" stroke="#34d399" stroke-width="2"/>
+<text x="325" y="641" font-family="sans-serif" font-size="20" font-weight="600" fill="#f4f7fb" text-anchor="start">Result + embedded Evidence</text>
+<text x="325" y="663.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Coordinator correlation and exact target readback</text>
+<path d="M610,707 L610,737" fill="none" stroke="#34d399" stroke-width="3" marker-end="url(#arrow-emerald)"/>
+<rect x="425" y="737" width="370" height="92" rx="14" fill="#101a30" stroke="#34d399" stroke-width="2"/>
+<text x="445" y="767" font-family="sans-serif" font-size="20" font-weight="600" fill="#f4f7fb" text-anchor="start">Evidence review</text>
+<text x="445" y="789.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Independent review where warranted</text>
+<path d="M610,829 L610,865 L220,865 L220,885" fill="none" stroke="#34d399" stroke-width="3" marker-end="url(#arrow-emerald)"/>
+<text x="238" y="857" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#34d399" text-anchor="start">Pass</text>
+<rect x="40" y="885" width="360" height="96" rx="14" fill="#101a30" stroke="#34d399" stroke-width="2"/>
+<text x="60" y="915" font-family="sans-serif" font-size="19" font-weight="600" fill="#f4f7fb" text-anchor="start">Deliver</text>
+<text x="60" y="937.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">All acceptance passes; quiescent</text>
+<path d="M610,829 L610,865 L600,865 L600,885" fill="none" stroke="#a9b4c9" stroke-width="3" marker-end="url(#arrow-muted)"/>
+<text x="618" y="857" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#a9b4c9" text-anchor="start">Repair budget</text>
+<rect x="420" y="885" width="360" height="96" rx="14" fill="#101a30" stroke="#2c3b5c" stroke-width="2"/>
+<text x="440" y="915" font-family="sans-serif" font-size="19" font-weight="600" fill="#f4f7fb" text-anchor="start">One bounded repair</text>
+<text x="440" y="937.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Recheck invalidated evidence only</text>
+<path d="M610,829 L610,865 L980,865 L980,885" fill="none" stroke="#fb7185" stroke-width="3" marker-end="url(#arrow-blocked)"/>
+<text x="998" y="857" font-family="sans-serif" font-size="11.5" font-weight="600" fill="#fb7185" text-anchor="start">Unresolved</text>
+<rect x="800" y="885" width="360" height="96" rx="14" fill="#101a30" stroke="#fb7185" stroke-width="2"/>
+<text x="820" y="915" font-family="sans-serif" font-size="19" font-weight="600" fill="#f4f7fb" text-anchor="start">Blocked</text>
+<text x="820" y="937.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Reason and next action</text>
+<path d="M780,907 L790,907 L790,839 L1005,839 L1005,783 L795,783" fill="none" stroke="#22d3ee" stroke-width="2.25" marker-end="url(#arrow-cyan)" stroke-dasharray="2,7"/>
+<text x="1013" y="811" font-family="sans-serif" font-size="12" font-weight="600" fill="#22d3ee" text-anchor="start">Recheck once</text>
+<rect x="40" y="1011" width="1140" height="74" rx="14" fill="#0d1526" stroke="#f5a524" stroke-width="2" stroke-dasharray="10,6"/>
+<text x="60" y="1041" font-family="sans-serif" font-size="16" font-weight="600" fill="#f4f7fb" text-anchor="start">Development-only, optional</text>
+<text x="60" y="1063.5" font-family="sans-serif" font-size="14.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Frozen candidate → PR + fresh review → human merge, separately authorized. Not universal.</text>
+<text x="40" y="1117" font-family="sans-serif" font-size="13" font-weight="400" fill="#a9b4c9" text-anchor="start">Reference workflow, not a runtime. Provider probes: NOT RUN. Offline checks do not verify external state.</text>
+<rect x="1180" y="125" width="220" height="1016" rx="14" fill="#0d1526" stroke="#2c3b5c" stroke-width="2"/>
+<text x="1200" y="155" font-family="sans-serif" font-size="17" font-weight="700" fill="#f4f7fb" text-anchor="start">Shared skills &amp;</text>
+<text x="1200" y="179" font-family="sans-serif" font-size="17" font-weight="700" fill="#f4f7fb" text-anchor="start">contracts layer</text>
+<text x="1200" y="201" font-family="sans-serif" font-size="12.5" font-weight="600" fill="#22d3ee" text-anchor="start">v0.1.0</text>
+<text x="1200" y="223" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Portable across tools.</text>
+<text x="1200" y="242.5" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#a9b4c9" text-anchor="start">Distinct from provider</text>
+<text x="1200" y="262" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#a9b4c9" text-anchor="start">adapters, which are</text>
+<text x="1200" y="281.5" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#a9b4c9" text-anchor="start">wiring guides, not</text>
+<text x="1200" y="301" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#a9b4c9" text-anchor="start">runtimes.</text>
+<text x="1200" y="326" font-family="sans-serif" font-size="13.5" font-weight="600" fill="#f4f7fb" text-anchor="start">Skills</text>
+<rect x="1200" y="352" width="180" height="26" rx="8" fill="#101a30" stroke="#22d3ee" stroke-width="1"/>
+<text x="1212" y="370" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">task-intake</text>
+<rect x="1200" y="382" width="180" height="26" rx="8" fill="#101a30" stroke="#22d3ee" stroke-width="1"/>
+<text x="1212" y="400" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">dag-coordinate</text>
+<rect x="1200" y="412" width="180" height="26" rx="8" fill="#101a30" stroke="#22d3ee" stroke-width="1"/>
+<text x="1212" y="430" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">writer-handoff</text>
+<rect x="1200" y="442" width="180" height="26" rx="8" fill="#101a30" stroke="#22d3ee" stroke-width="1"/>
+<text x="1212" y="460" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">runtime-checkpoint</text>
+<rect x="1200" y="472" width="180" height="26" rx="8" fill="#101a30" stroke="#22d3ee" stroke-width="1"/>
+<text x="1212" y="490" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">evidence-review</text>
+<text x="1200" y="526" font-family="sans-serif" font-size="13.5" font-weight="600" fill="#f4f7fb" text-anchor="start">Contracts 0.1 · Draft</text>
+<rect x="1200" y="552" width="180" height="26" rx="8" fill="#101a30" stroke="#a685fa" stroke-width="1"/>
+<text x="1212" y="570" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">TaskPacket</text>
+<rect x="1200" y="582" width="180" height="26" rx="8" fill="#101a30" stroke="#a685fa" stroke-width="1"/>
+<text x="1212" y="600" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">ControlReceipt</text>
+<rect x="1200" y="612" width="180" height="26" rx="8" fill="#101a30" stroke="#a685fa" stroke-width="1"/>
+<text x="1212" y="630" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">Checkpoint</text>
+<rect x="1200" y="642" width="180" height="26" rx="8" fill="#101a30" stroke="#a685fa" stroke-width="1"/>
+<text x="1212" y="660" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">Result</text>
+<rect x="1200" y="672" width="180" height="26" rx="8" fill="#101a30" stroke="#a685fa" stroke-width="1"/>
+<text x="1212" y="690" font-family="sans-serif" font-size="12.5" font-weight="400" fill="#f4f7fb" text-anchor="start">Bundle</text>
+<text x="1200" y="722" font-family="sans-serif" font-size="12" font-weight="400" fill="#a9b4c9" text-anchor="start">Bundle groups records for</text>
+<text x="1200" y="741" font-family="sans-serif" font-size="12" font-weight="400" fill="#a9b4c9" text-anchor="start">offline checks, not a</text>
+<text x="1200" y="760" font-family="sans-serif" font-size="12" font-weight="400" fill="#a9b4c9" text-anchor="start">runtime supervisor.</text>
+</svg>
