@@ -38,7 +38,13 @@ def render(data):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--check', action='store_true')
+    p.add_argument('--banner', action='store_true',
+                    help='Generate the README banner desktop/mobile SVGs from diagrams/banner.json '
+                         'instead of the core workflow diagram (see tools/banner_diagram.py).')
     args = p.parse_args()
+    if args.banner:
+        from tools.banner_diagram import generate as generate_banner
+        return generate_banner(check=args.check)
     output = render(load(ROOT / 'diagrams/core.json'))
     target = ROOT / 'diagrams/core.svg'
     if args.check:
