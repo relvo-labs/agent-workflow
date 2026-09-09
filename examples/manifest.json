@@ -1,0 +1,87 @@
+[
+  {
+    "file": "happy-path.json",
+    "valid": true,
+    "error": null
+  },
+  {
+    "file": "missing-authorization.json",
+    "valid": false,
+    "error": "authorization"
+  },
+  {
+    "file": "missing-identity.json",
+    "valid": false,
+    "error": "schema"
+  },
+  {
+    "file": "stale-evidence.json",
+    "valid": false,
+    "error": "stale-evidence"
+  },
+  {
+    "file": "duplicate-receipt.json",
+    "valid": false,
+    "error": "duplicate-receipt"
+  },
+  {
+    "file": "safe-handoff.json",
+    "valid": true,
+    "error": null
+  },
+  {
+    "file": "blocked-resume.json",
+    "valid": true,
+    "error": null
+  },
+  {
+    "file": "unsafe-resume.json",
+    "valid": false,
+    "error": "resume-unsupported"
+  },
+  {
+    "file": "inflight-durable.json",
+    "valid": false,
+    "error": "durability"
+  },
+  {
+    "file": "uncorrelated-outcome.json",
+    "valid": false,
+    "error": "correlation"
+  },
+  {
+    "file": "applied-not-observed.json",
+    "valid": false,
+    "error": "receipt-state"
+  },
+  {
+    "file": "cancel-is-not-quiescence.json",
+    "valid": false,
+    "error": "cancellation"
+  },
+  {
+    "file": "write-overlap.json",
+    "valid": false,
+    "error": "overlap"
+  },
+  {
+    "file": "dag-cycle.json",
+    "valid": false,
+    "error": "dag"
+  },
+  {
+    "file": "cross-pr-writer.json",
+    "valid": false,
+    "error": "cross-pr-writer"
+  },
+  {
+    "file": "external-without-readback.json",
+    "valid": false,
+    "error": "readback"
+  },
+  {
+    "file": "nonrepo-delivered.json",
+    "valid": true,
+    "error": null
+  }
+]

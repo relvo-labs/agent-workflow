@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://relvo-labs.github.io/agent-workflow/schemas/0.1/result.schema.json",
+  "title": "result",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "0.1"
+    },
+    "kind": {
+      "const": "Result"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worktree": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pr": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        }
+      },
+      "required": [
+        "provider",
+        "session"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "repository"
+                ]
+              },
+              {
+                "required": [
+                  "worktree"
+                ]
+              },
+              {
+                "required": [
+                  "branch"
+                ]
+              },
+              {
+                "required": [
+                  "issue"
+                ]
+              },
+              {
+                "required": [
+                  "pr"
+                ]
+              },
+              {
+                "required": [
+                  "base"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "repository",
+              "worktree",
+              "branch",
+              "issue",
+              "pr",
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "candidate": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "outcome": {
+      "enum": [
+        "delivered",
+        "blocked",
+        "cancelled"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repair_attempts": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "acceptance_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidate": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "command": {
+            "type": "string",
+            "minLength": 1
+          },
+          "outcome": {
+            "enum": [
+              "pass",
+              "fail"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "local",
+              "external"
+            ]
+          },
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "readback": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "id",
+          "acceptance_id",
+          "command",
+          "outcome",
+          "scope",
+          "target",
+          "readback",
+          "observed_at"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "kind",
+    "task_id",
+    "run_id",
+    "identity",
+    "outcome",
+    "reason",
+    "repair_attempts",
+    "evidence"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "identity": {
+            "required": [
+              "repository"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "candidate"
+        ],
+        "properties": {
+          "evidence": {
+            "items": {
+              "required": [
+                "candidate"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

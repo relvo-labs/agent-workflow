@@ -1,0 +1,374 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://relvo-labs.github.io/agent-workflow/schemas/0.1/task-packet.schema.json",
+  "title": "task-packet",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": "0.1"
+    },
+    "kind": {
+      "const": "TaskPacket"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "request": {
+      "type": "string",
+      "minLength": 1
+    },
+    "classification": {
+      "enum": [
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    "risk": {
+      "enum": [
+        "low",
+        "high"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "worktree": {
+          "type": "string",
+          "minLength": 1
+        },
+        "branch": {
+          "type": "string",
+          "minLength": 1
+        },
+        "issue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pr": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        }
+      },
+      "required": [
+        "provider",
+        "session"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "anyOf": [
+              {
+                "required": [
+                  "repository"
+                ]
+              },
+              {
+                "required": [
+                  "worktree"
+                ]
+              },
+              {
+                "required": [
+                  "branch"
+                ]
+              },
+              {
+                "required": [
+                  "issue"
+                ]
+              },
+              {
+                "required": [
+                  "pr"
+                ]
+              },
+              {
+                "required": [
+                  "base"
+                ]
+              }
+            ]
+          },
+          "then": {
+            "required": [
+              "repository",
+              "worktree",
+              "branch",
+              "issue",
+              "pr",
+              "base"
+            ]
+          }
+        }
+      ]
+    },
+    "candidate": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "granted": {
+          "type": "boolean"
+        },
+        "by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "write_scopes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "granted",
+        "by",
+        "actions",
+        "write_scopes"
+      ]
+    },
+    "required_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "acceptance": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "depends_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "state": {
+            "enum": [
+              "waiting",
+              "running",
+              "completed"
+            ]
+          },
+          "mode": {
+            "enum": [
+              "coordinator",
+              "worker",
+              "terminal"
+            ]
+          },
+          "writes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "identity": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "provider": {
+                "type": "string",
+                "minLength": 1
+              },
+              "session": {
+                "type": "string",
+                "minLength": 1
+              },
+              "repository": {
+                "type": "string",
+                "minLength": 1
+              },
+              "worktree": {
+                "type": "string",
+                "minLength": 1
+              },
+              "branch": {
+                "type": "string",
+                "minLength": 1
+              },
+              "issue": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pr": {
+                "type": "string",
+                "minLength": 1
+              },
+              "base": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{40}$"
+              }
+            },
+            "required": [
+              "provider",
+              "session"
+            ],
+            "allOf": [
+              {
+                "if": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "repository"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "worktree"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "branch"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "issue"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "pr"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "base"
+                      ]
+                    }
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "repository",
+                    "worktree",
+                    "branch",
+                    "issue",
+                    "pr",
+                    "base"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "depends_on",
+          "state",
+          "mode",
+          "writes",
+          "resources",
+          "identity"
+        ]
+      }
+    },
+    "repair_limit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "resume_requested": {
+      "type": "boolean"
+    },
+    "resume_supported": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "version",
+    "kind",
+    "task_id",
+    "run_id",
+    "request",
+    "classification",
+    "risk",
+    "identity",
+    "authorization",
+    "required_actions",
+    "acceptance",
+    "nodes",
+    "repair_limit",
+    "resume_requested",
+    "resume_supported"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "identity": {
+            "required": [
+              "repository"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "candidate"
+        ]
+      }
+    }
+  ]
+}

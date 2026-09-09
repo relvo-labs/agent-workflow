@@ -1,0 +1,121 @@
+{
+  "task": {
+    "version": "0.1",
+    "kind": "TaskPacket",
+    "task_id": "task-a",
+    "run_id": "run-a",
+    "request": "Validate a local example artifact",
+    "classification": "S",
+    "risk": "low",
+    "identity": {
+      "provider": "example",
+      "session": "writer-a",
+      "repository": "example/project",
+      "worktree": "worktrees/task-a",
+      "branch": "feat/task-a",
+      "base": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "issue": "1",
+      "pr": "pre-pr:feat/task-a"
+    },
+    "candidate": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "authorization": {
+      "granted": false,
+      "by": "example-owner",
+      "actions": [
+        "local-write"
+      ],
+      "write_scopes": [
+        "src"
+      ]
+    },
+    "required_actions": [
+      "local-write"
+    ],
+    "acceptance": [
+      "local-test"
+    ],
+    "nodes": [
+      {
+        "id": "implement",
+        "depends_on": [],
+        "state": "completed",
+        "mode": "coordinator",
+        "writes": [
+          "src/example.txt"
+        ],
+        "resources": [],
+        "identity": {
+          "provider": "example",
+          "session": "writer-a",
+          "repository": "example/project",
+          "worktree": "worktrees/task-a",
+          "branch": "feat/task-a",
+          "base": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "issue": "1",
+          "pr": "pre-pr:feat/task-a"
+        }
+      }
+    ],
+    "repair_limit": 1,
+    "resume_requested": false,
+    "resume_supported": false
+  },
+  "checkpoint": {
+    "version": "0.1",
+    "kind": "Checkpoint",
+    "task_id": "task-a",
+    "run_id": "run-a",
+    "identity": {
+      "provider": "example",
+      "session": "writer-a",
+      "repository": "example/project",
+      "worktree": "worktrees/task-a",
+      "branch": "feat/task-a",
+      "base": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "issue": "1",
+      "pr": "pre-pr:feat/task-a"
+    },
+    "sequence": 1,
+    "state": "completed",
+    "process_state": "quiescent",
+    "queue_cancelled": false,
+    "history_persisted": true,
+    "durable": true,
+    "next_action": "Human reviews the local artifact",
+    "handoff": null
+  },
+  "result": {
+    "version": "0.1",
+    "kind": "Result",
+    "task_id": "task-a",
+    "run_id": "run-a",
+    "identity": {
+      "provider": "example",
+      "session": "writer-a",
+      "repository": "example/project",
+      "worktree": "worktrees/task-a",
+      "branch": "feat/task-a",
+      "base": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "issue": "1",
+      "pr": "pre-pr:feat/task-a"
+    },
+    "candidate": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "outcome": "delivered",
+    "reason": "All local acceptance checks passed",
+    "repair_attempts": 0,
+    "evidence": [
+      {
+        "id": "ev-a",
+        "acceptance_id": "local-test",
+        "candidate": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "command": "python -m unittest discover -s tests -v",
+        "outcome": "pass",
+        "scope": "local",
+        "target": "src/example.txt",
+        "readback": "",
+        "observed_at": "2026-01-01T00:00:00Z"
+      }
+    ]
+  },
+  "receipts": []
+}

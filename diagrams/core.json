@@ -1,0 +1,88 @@
+{
+  "version": "0.1",
+  "nodes": [
+    {
+      "id": "authority",
+      "title": "Need + authority",
+      "note": "Missing authority \u2192 ask / blocked"
+    },
+    {
+      "id": "classify",
+      "title": "Classify S / M / L",
+      "note": "S may stay with coordinator"
+    },
+    {
+      "id": "dag",
+      "title": "DAG + overlap gate",
+      "note": "Wait for dependencies / exclusive leases"
+    },
+    {
+      "id": "identity",
+      "title": "Exact identity + context",
+      "note": "Bind one writer to one PR"
+    },
+    {
+      "id": "run",
+      "title": "Run + questions + controls",
+      "note": "Persisted \u2260 observed \u2260 applied"
+    },
+    {
+      "id": "outcome",
+      "title": "Correlated outcome",
+      "note": "Fail closed if resume unsupported"
+    },
+    {
+      "id": "evidence",
+      "title": "Frozen evidence review",
+      "note": "Read back external targets separately"
+    },
+    {
+      "id": "repair",
+      "title": "Bounded repair: at most one",
+      "note": "Failure after budget \u2192 blocked"
+    },
+    {
+      "id": "deliver",
+      "title": "Deliver / blocked",
+      "note": "Development gates only with authority"
+    }
+  ],
+  "edges": [
+    [
+      "authority",
+      "classify"
+    ],
+    [
+      "classify",
+      "dag"
+    ],
+    [
+      "dag",
+      "identity"
+    ],
+    [
+      "identity",
+      "run"
+    ],
+    [
+      "run",
+      "outcome"
+    ],
+    [
+      "outcome",
+      "evidence"
+    ],
+    [
+      "evidence",
+      "repair"
+    ],
+    [
+      "repair",
+      "deliver"
+    ],
+    [
+      "repair",
+      "evidence"
+    ]
+  ]
+}

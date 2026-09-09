@@ -1,0 +1,10 @@
+{
+  "version": "0.1",
+  "max_repair_attempts": 1,
+  "human_merge_required": true,
+  "resume_policy": "fail-closed",
+  "models": {},
+  "quota": null,
+  "timebox_minutes": null,
+  "note": "Example team policy, not machine enforcement. Bind task.repair_limit explicitly; unset budgets require team decisions, not unlimited authority."
+}
