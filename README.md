@@ -1,3 +1,7 @@
+![Multi-session collaboration reference architecture: coordinator routes agents and terminal tasks, gathers evidence, and gates delivery](assets/collaboration-architecture.jpg)
+
+*Reference architecture, not verified integration: the Telegram/Hermes routes shown are illustrative; this toolkit remains portable across tools.*
+
 # Relvo Agent Workflow
 
 **Skills-first toolkit for verifiable multi-agent collaboration.**
