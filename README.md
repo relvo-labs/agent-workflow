@@ -18,10 +18,10 @@ reads live external state, enforces process locks or proves evidence authenticit
 ## Five-minute local success path
 
 Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/) (or pip in an existing venv).
-Until the Draft PR is merged, clone its working branch explicitly:
+Clone the canonical repository:
 
 ```sh
-git clone --branch feat/v0.1-skills-foundation https://github.com/relvo-labs/agent-workflow.git
+git clone https://github.com/relvo-labs/agent-workflow.git
 cd agent-workflow
 uv venv --python python3 .venv
 uv pip sync --python .venv/bin/python requirements.txt
